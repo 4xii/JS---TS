@@ -2,7 +2,7 @@
   "ver": "2.0.13",
   "importer": "typescript",
   "imported": true,
-  "uuid": "39f3e96c-354c-4926-ab2d-8a257da6be55",
+  "uuid": "e79c0635-647a-4148-88d1-f63c76cb21ff",
   "files": [
     ".js",
     ".trans"
@@ -10,6 +10,6 @@
   "subMetas": {},
   "userData": {
     "importAsPlugin": false,
-    "moduleId": "project:///assets/script/RoadPoint.js"
+    "moduleId": "project:///assets/script/game/GameMap.js"
   }
 }

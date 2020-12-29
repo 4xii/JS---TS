@@ -37,3 +37,69 @@
 2020-12-29 21:32:44-log: xiaomi-quick-game@1.0.0 enable
 2020-12-29 21:32:48-warn: [Asset DB] Error: ENOENT: no such file or directory, link 'D:\读书\前端\cocos\taxi-game\接送客人小游戏\temp\asset-db\internal\meta-backup\c4e9f550-49d9-11eb-8d2d-f5081a26c1aa' -> 'D:\读书\前端\cocos\CocosCreator3D\resources\app.asar.unpacked\builtin\asset-db\static\internal\assets.meta'
 2020-12-29 21:59:54-warn: [Asset DB] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+2020-12-29 22:14:12-error: [Scene] Please define 'type' parameter of RoadPoint.type as the constructor of [object Object].
+2020-12-29 22:14:12-error: [Scene] Please define 'type' parameter of RoadPoint.moveType as the constructor of [object Object].
+2020-12-29 22:14:12-error: [Scene] Please define 'type' parameter of RoadPoint.type as the constructor of [object Object].
+2020-12-29 22:14:12-error: [Scene] Please define 'type' parameter of RoadPoint.moveType as the constructor of [object Object].
+2020-12-29 22:19:21-error: [Scene] Please define 'type' parameter of RoadPoint.type as the constructor of [object Object].
+2020-12-29 22:19:21-error: [Scene] Please define 'type' parameter of RoadPoint.moveType as the constructor of [object Object].
+2020-12-29 22:19:21-error: [Scene] Please define 'type' parameter of RoadPoint.type as the constructor of [object Object].
+2020-12-29 22:19:21-error: [Scene] Please define 'type' parameter of RoadPoint.moveType as the constructor of [object Object].
+2020-12-29 23:07:51-warn: Failed to move the asset: the same file already exists at the destination address 
+target: db://assets/game.scene
+2020-12-29 23:43:26-info: asset(D:\读书\前端\JS高级与Ts\TS\cocos game\接送客人小游戏\assets\Game.scene) saved
+2020-12-30 00:05:15-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/CarManager.js" (or its recursive dependencies).
+ ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:435:34
+    at Array.forEach (<anonymous>)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:432:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:05:15-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/GameCtril.js" (or its recursive dependencies).
+However, the exception had been triggered during load of module project:///assets/script/game/CarManager.js
+2020-12-30 00:05:15-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/GameCtril.js" (or its recursive dependencies).  ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:435:34
+    at Array.forEach (<anonymous>)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:432:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:05:16-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/GameCtril.js" (or its recursive dependencies).  ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:435:34
+    at Array.forEach (<anonymous>)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:432:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:05:16-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/CarManager.js" (or its recursive dependencies).
+ ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:05:16-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/CarManager.js" (or its recursive dependencies).  ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:13:56-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/GameCtril.js" (or its recursive dependencies).  ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:435:34
+    at Array.forEach (<anonymous>)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:432:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:13:56-error: [Scene] An exception is thrown during load of module "project:///assets/script/game/GameCtril.js" (or its recursive dependencies).  ReferenceError: Car is not defined
+    at Object.execute (file:///D:/%E8%AF%BB%E4%B9%A6/%E5%89%8D%E7%AB%AF/JS%E9%AB%98%E7%BA%A7%E4%B8%8ETs/TS/cocos%20game/%E6%8E%A5%E9%80%81%E5%AE%A2%E4%BA%BA%E5%B0%8F%E6%B8%B8%E6%88%8F/library/41/41fb289d-ea24-4383-9acf-9ead18987e44.js:53:15)
+    at doExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:455:34)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:451:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:435:34
+    at Array.forEach (<anonymous>)
+    at postOrderExec (D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:432:12)
+    at D:\读书\前端\cocos\CocosCreator3D\resources\app.asar\node_modules\systemjs\dist\system.js:405:14
+2020-12-30 00:18:57-info: asset(D:\读书\前端\JS高级与Ts\TS\cocos game\接送客人小游戏\assets\Game.scene) saved
