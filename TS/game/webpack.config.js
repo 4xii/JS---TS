@@ -14,15 +14,14 @@ module.exports = {
     //指定打包后的目录
     path: path.resolve(__dirname,'dist'),
     //打包后文件的名字
-    filename:"bundle.js"
-  },
+    filename:"bundle.js",
 
-  //告诉webpack不适用箭头
-  environment:{
-    arrowFunction:false,
-    const:false
+    //告诉webpack不适用箭头
+    environment:{
+      arrowFunction:false,
+      const:false
+    },
   },
-
   //指定webpack打包时要使用模块
   module:{
     //指定要加载的规则

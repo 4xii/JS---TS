@@ -1,0 +1,39 @@
+2020-12-29 21:32:42-log: ui-kit@1.0.0 enable
+2020-12-29 21:32:42-log: ipc@1.0.0 enable
+2020-12-29 21:32:42-log: tester@1.0.0 enable
+2020-12-29 21:32:42-log: preferences@1.0.0 enable
+2020-12-29 21:32:43-log: engine@1.0.0 enable
+2020-12-29 21:32:43-log: asset-db@1.0.0 enable
+2020-12-29 21:32:43-log: console@1.0.0 enable
+2020-12-29 21:32:43-log: scene@1.0.0 enable
+2020-12-29 21:32:43-log: packager@1.0.0 enable
+2020-12-29 21:32:43-log: project-setting@1.0.0 enable
+2020-12-29 21:32:43-log: about@1.0.0 enable
+2020-12-29 21:32:43-log: server@1.0.0 enable
+2020-12-29 21:32:43-log: utils@1.0.0 enable
+2020-12-29 21:32:43-log: profile@1.0.0 enable
+2020-12-29 21:32:43-log: assets@1.0.0 enable
+2020-12-29 21:32:43-log: inspector@1.0.0 enable
+2020-12-29 21:32:43-log: hierarchy@1.0.0 enable
+2020-12-29 21:32:43-log: preview@1.0.0 enable
+2020-12-29 21:32:43-log: animator@1.0.0 enable
+2020-12-29 21:32:43-error: [Window] Plug-in(ui-kit) execution error: [windows].load code failed to execute.
+2020-12-29 21:32:43-error: [Window] Error: Failed to execute 'define' on 'CustomElementRegistry': this name has already been used with this registry
+2020-12-29 21:32:44-log: builder@1.0.0 enable
+2020-12-29 21:32:44-log: alipay-mini-game@1.0.0 enable
+2020-12-29 21:32:44-log: android@1.0.0 enable
+2020-12-29 21:32:44-log: baidu-mini-game@1.0.0 enable
+2020-12-29 21:32:44-log: cocos-play@1.0.0 enable
+2020-12-29 21:32:44-log: huawei-mini-game@1.0.0 enable
+2020-12-29 21:32:44-log: ios@1.0.0 enable
+2020-12-29 21:32:44-log: mac@1.0.0 enable
+2020-12-29 21:32:44-log: native@1.0.0 enable
+2020-12-29 21:32:44-log: oppo-mini-game@1.0.0 enable
+2020-12-29 21:32:44-log: vivo-mini-game@1.0.0 enable
+2020-12-29 21:32:44-log: web-desktop@1.0.0 enable
+2020-12-29 21:32:44-log: web-mobile@1.0.0 enable
+2020-12-29 21:32:44-log: wechatgame@1.0.0 enable
+2020-12-29 21:32:44-log: windows@1.0.0 enable
+2020-12-29 21:32:44-log: xiaomi-quick-game@1.0.0 enable
+2020-12-29 21:32:48-warn: [Asset DB] Error: ENOENT: no such file or directory, link 'D:\读书\前端\cocos\taxi-game\接送客人小游戏\temp\asset-db\internal\meta-backup\c4e9f550-49d9-11eb-8d2d-f5081a26c1aa' -> 'D:\读书\前端\cocos\CocosCreator3D\resources\app.asar.unpacked\builtin\asset-db\static\internal\assets.meta'
+2020-12-29 21:59:54-warn: [Asset DB] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
