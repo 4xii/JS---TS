@@ -17,6 +17,13 @@ export class CarManager extends Component {
 
         this._createMainerCar(points[0]);
     }
+    public controlMoving(isRunning = true){
+        if(isRunning){
+            this.mainCar.startRunning();
+        }else {
+            this.mainCar.stopRunning();
+        }
+    }
 
     private _createMainerCar(point:Node){
         this.mainCar.setEntry(point);

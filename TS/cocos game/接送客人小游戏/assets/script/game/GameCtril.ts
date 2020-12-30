@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from "cc";
+import { _decorator, Component, Node,Touch,EventTouch } from "cc";
 import { CarManager } from "./CarManager";
 import { MapManager } from "./MapManager";
 const { ccclass, property } = _decorator;
@@ -14,4 +14,24 @@ export class GameCtril extends Component {
         type:CarManager,
     })
     carManager: CarManager = null;
+
+    //生命周期onLoad初始化阶段
+    public onLoad(){
+        this.mapManager.resetMap();
+        this.carManager.resetCars(this.mapManager.currPath)
+    }
+
+    //屏幕点击事件
+    public start(){
+        this.node.on(Node.EventType.TOUCH_START,this._touchStart,this);
+        this.node.on(Node.EventType.TOUCH_END,this._touchEnd,this)
+    }
+    
+    private _touchStart(touch:Touch,event:EventTouch){
+        this.carManager.controlMoving();
+    }
+
+    private _touchEnd(touch:Touch,event:EventTouch){
+        this.carManager.controlMoving(false);
+    }
 }
