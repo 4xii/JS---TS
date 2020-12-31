@@ -15,7 +15,7 @@ export class CarManager extends Component {
             return;
         }
 
-        this._createMainerCar(points[0]);
+        this._createMainerCar(points[0]/* ,true */);
     }
     public controlMoving(isRunning = true){
         if(isRunning){
