@@ -1,7 +1,8 @@
-import { _decorator, Component, Node, Vec3 } from "cc";
-import { CustomEventListenerts } from "../data/CustomEventListener.ts";
+import { _decorator, Component, Node, Vec3, ParticleSystemComponent } from "cc";
+import { CustomEventListener } from "../data/CustomEventListener";
 import {RoadPoint} from "./RoadPoint";
 import {Constants} from '../data/Constants';
+import { AudioManager } from "./AudioManager";
 
 const { ccclass, property } = _decorator;
 const EventName = Constants.EventName;
@@ -26,10 +27,13 @@ export class Car extends Component {
     private _acceleration = 0.2; //加速度
     private _isMain = false;//由于AI小车和主角小车公用一套逻辑，用于区分
     private _isInOrder = false;//订单触发>乘客在运动
+    private _isBraking = false;
+    private _gas:ParticleSystemComponent = null;
+    private _overCD: Function = null;
 
     //监听动画播放结束的回调
     public start (){
-        CustomEventListenerts.on(EventName.FINISHDWALK,this._finishedWalk,this)
+        CustomEventListener.on(EventName.FINISHED_WALK,this._finishedWalk,this)
     }
 
     public update(dt:number){
@@ -45,6 +49,10 @@ export class Car extends Component {
         }
         if (this._currSpeed <= 0.001) {
             this._isMoving = false;//刹车到0.001 就停止
+            if(this._isBraking){
+                this._isBraking = false;
+                CustomEventListener.dispatchEvent(EventName.END_BRAKING);//派发刹车事件
+            }
         }
         //向朝向方向运动
         switch (this._currRoadPoint.moveType) {
@@ -145,6 +153,12 @@ export class Car extends Component {
                 this.node.eulerAngles = new Vec3(0,90,0);
             }
         }
+
+        if(this._isMain){
+            const gasNode = this.node.getChildByName('gas');
+            this._gas = gasNode.getComponent(ParticleSystemComponent);
+            this._gas.play();
+        }
     }
 
     public startRunning(){
@@ -156,11 +170,19 @@ export class Car extends Component {
     }
     public stopRunning(){
         this._acceleration = -0.3;
+        CustomEventListener.dispatchEvent(EventName.START_BRAKING,this.node);//执行START_BRAKING
+        this._isBraking = true;
         //this._isMoving = false;
+        AudioManager.playSound(Constants.AudioSource.STOP);
     }
+
+    public moveAfterFinished(cd:Function){
+        this._overCD = cd;
+    }
+
     //到站
     private _arrivalSataion(){
-        console.log('arrival.....')
+        
         this._pointA.set(this._pointB);
         this._currRoadPoint = this._currRoadPoint.nextStation.getComponent(RoadPoint);
         if(this._currRoadPoint.nextStation){
@@ -168,10 +190,19 @@ export class Car extends Component {
 
             //到站乘客事件
             if(this._isMain){
+                //触发刹车动画
+                if(this._isBraking){
+                    this._isBraking = false;
+                    CustomEventListener.dispatchEvent(EventName.END_BRAKING);
+                }
+
+
                 if (this._currRoadPoint.type === RoadPoint.RoadPointType.GREETING) {
                     this._greetingCustomer();
                 } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.GOODBYE) {
                     this._takingCustomer();
+                } else if (this._currRoadPoint.type === RoadPoint.RoadPointType.END){
+                    AudioManager.playSound(Constants.AudioSource.WIN);//到达终点播放胜利
                 }
             }
 
@@ -207,23 +238,34 @@ export class Car extends Component {
         }else{
             this._isMoving = false;
             this._currRoadPoint = null;
+
+            if(this._overCD){
+                this._overCD(this);
+                this._overCD = null;
+            }
         }
     }
     
     private _greetingCustomer(){
         //接客
         this._isInOrder = true;
+        this._currSpeed = 0;//清除速度
         //dispatchEvent派发 小车的位置 当前的方向
-        CustomEventListenerts.dispatchEvent(EventName.GREETING,this.node.worldPosition,this._currRoadPoint.direction)
+        this._gas.stop();
+        CustomEventListener.dispatchEvent(EventName.GREETING,this.node.worldPosition,this._currRoadPoint.direction)
     }
 
     private _takingCustomer(){
         this._isInOrder = true;
-        CustomEventListenerts.dispatchEvent(EventName.GOODBYE,this.node.worldPosition,this._currRoadPoint.direction)
+        this._currSpeed = 0;//清除速度
+        this._gas.stop();
+        CustomEventListener.dispatchEvent(EventName.GOODBYE,this.node.worldPosition,this._currRoadPoint.direction)
+        CustomEventListener.dispatchEvent(EventName.SHOW_COIN,this.node.worldPosition);//送客弹金币
     }
 
     private _finishedWalk(){
         this._isInOrder = false;
+        this._gas.play();    
     }
     //转换角度正负
     private _conversion(value:number){

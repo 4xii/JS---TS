@@ -1,37 +1,54 @@
-2020-12-31 14:52:30-log: ui-kit@1.0.0 enable
-2020-12-31 14:52:30-log: ipc@1.0.0 enable
-2020-12-31 14:52:30-log: tester@1.0.0 enable
-2020-12-31 14:52:30-log: preferences@1.0.0 enable
-2020-12-31 14:52:31-log: engine@1.0.0 enable
-2020-12-31 14:52:31-log: asset-db@1.0.0 enable
-2020-12-31 14:52:31-log: console@1.0.0 enable
-2020-12-31 14:52:32-log: scene@1.0.0 enable
-2020-12-31 14:52:32-log: packager@1.0.0 enable
-2020-12-31 14:52:32-log: project-setting@1.0.0 enable
-2020-12-31 14:52:32-log: about@1.0.0 enable
-2020-12-31 14:52:32-log: server@1.0.0 enable
-2020-12-31 14:52:32-log: utils@1.0.0 enable
-2020-12-31 14:52:32-log: profile@1.0.0 enable
-2020-12-31 14:52:32-log: assets@1.0.0 enable
-2020-12-31 14:52:32-log: inspector@1.0.0 enable
-2020-12-31 14:52:32-log: hierarchy@1.0.0 enable
-2020-12-31 14:52:32-log: preview@1.0.0 enable
-2020-12-31 14:52:32-log: animator@1.0.0 enable
-2020-12-31 14:52:32-log: builder@1.0.0 enable
-2020-12-31 14:52:32-log: alipay-mini-game@1.0.0 enable
-2020-12-31 14:52:32-log: android@1.0.0 enable
-2020-12-31 14:52:32-log: baidu-mini-game@1.0.0 enable
-2020-12-31 14:52:33-log: cocos-play@1.0.0 enable
-2020-12-31 14:52:33-log: huawei-mini-game@1.0.0 enable
-2020-12-31 14:52:33-log: ios@1.0.0 enable
-2020-12-31 14:52:33-log: mac@1.0.0 enable
-2020-12-31 14:52:33-log: native@1.0.0 enable
-2020-12-31 14:52:33-log: oppo-mini-game@1.0.0 enable
-2020-12-31 14:52:33-log: vivo-mini-game@1.0.0 enable
-2020-12-31 14:52:33-log: web-desktop@1.0.0 enable
-2020-12-31 14:52:33-log: web-mobile@1.0.0 enable
-2020-12-31 14:52:33-log: wechatgame@1.0.0 enable
-2020-12-31 14:52:33-log: windows@1.0.0 enable
-2020-12-31 14:52:33-log: xiaomi-quick-game@1.0.0 enable
-2020-12-31 14:52:41-warn: [Asset DB] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
-2020-12-31 21:55:27-warn: [Asset DB] Error: EPERM: operation not permitted, watch
+2021-01-02 21:56:00-log: ui-kit@1.0.0 enable
+2021-01-02 21:56:00-log: ipc@1.0.0 enable
+2021-01-02 21:56:00-log: tester@1.0.0 enable
+2021-01-02 21:56:00-log: preferences@1.0.0 enable
+2021-01-02 21:56:02-log: engine@1.0.0 enable
+2021-01-02 21:56:02-log: asset-db@1.0.0 enable
+2021-01-02 21:56:02-log: console@1.0.0 enable
+2021-01-02 21:56:02-log: scene@1.0.0 enable
+2021-01-02 21:56:02-log: packager@1.0.0 enable
+2021-01-02 21:56:02-log: project-setting@1.0.0 enable
+2021-01-02 21:56:02-log: about@1.0.0 enable
+2021-01-02 21:56:02-log: server@1.0.0 enable
+2021-01-02 21:56:02-log: utils@1.0.0 enable
+2021-01-02 21:56:02-log: profile@1.0.0 enable
+2021-01-02 21:56:02-log: assets@1.0.0 enable
+2021-01-02 21:56:02-log: inspector@1.0.0 enable
+2021-01-02 21:56:02-log: hierarchy@1.0.0 enable
+2021-01-02 21:56:02-log: preview@1.0.0 enable
+2021-01-02 21:56:02-log: animator@1.0.0 enable
+2021-01-02 21:56:05-log: builder@1.0.0 enable
+2021-01-02 21:56:05-log: alipay-mini-game@1.0.0 enable
+2021-01-02 21:56:05-log: android@1.0.0 enable
+2021-01-02 21:56:05-log: baidu-mini-game@1.0.0 enable
+2021-01-02 21:56:05-log: cocos-play@1.0.0 enable
+2021-01-02 21:56:05-log: huawei-mini-game@1.0.0 enable
+2021-01-02 21:56:05-log: ios@1.0.0 enable
+2021-01-02 21:56:05-log: mac@1.0.0 enable
+2021-01-02 21:56:05-log: native@1.0.0 enable
+2021-01-02 21:56:05-log: oppo-mini-game@1.0.0 enable
+2021-01-02 21:56:05-log: vivo-mini-game@1.0.0 enable
+2021-01-02 21:56:05-log: web-desktop@1.0.0 enable
+2021-01-02 21:56:05-log: web-mobile@1.0.0 enable
+2021-01-02 21:56:05-log: wechatgame@1.0.0 enable
+2021-01-02 21:56:05-log: windows@1.0.0 enable
+2021-01-02 21:56:05-log: xiaomi-quick-game@1.0.0 enable
+2021-01-02 21:56:13-warn: [Asset DB] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+2021-01-02 22:29:58-error: [preview-error]Uncaught TypeError: this.carManager.resetCars is not a function in http://localhost:7456/scripting/assets/script/game/GameCtril.js
+2021-01-02 22:30:06-error: [preview-error]Uncaught TypeError: this.carManager.resetCars is not a function in http://localhost:7456/scripting/assets/script/game/GameCtril.js
+2021-01-02 22:31:07-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:34:22-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:39:52-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:42:56-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:45:16-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:45:20-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:51:32-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 22:58:49-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:05:55-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:15:14-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:16:02-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:20:22-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:30:26-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:32:11-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:32:24-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-02 23:35:06-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js

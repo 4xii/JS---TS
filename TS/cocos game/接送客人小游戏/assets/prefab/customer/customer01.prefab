@@ -20,7 +20,7 @@
         "__id__": 2
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 57
@@ -31,7 +31,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 73.976,
+      "x": 0,
       "y": 0,
       "z": 0
     },
@@ -44,9 +44,9 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
+      "x": 1,
+      "y": 1,
+      "z": 1
     },
     "_layer": 1073741824,
     "_euler": {
@@ -1711,7 +1711,9 @@
         "__uuid__": "ef22ebc3-30ce-43d5-83b4-a18e43fcc4ab@7f3dc"
       }
     ],
-    "_defaultClip": null,
+    "_defaultClip": {
+      "__uuid__": "ef22ebc3-30ce-43d5-83b4-a18e43fcc4ab@7f3dc"
+    },
     "_sockets": [],
     "_id": ""
   },
