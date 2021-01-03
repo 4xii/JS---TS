@@ -1,54 +1,71 @@
-2021-01-02 21:56:00-log: ui-kit@1.0.0 enable
-2021-01-02 21:56:00-log: ipc@1.0.0 enable
-2021-01-02 21:56:00-log: tester@1.0.0 enable
-2021-01-02 21:56:00-log: preferences@1.0.0 enable
-2021-01-02 21:56:02-log: engine@1.0.0 enable
-2021-01-02 21:56:02-log: asset-db@1.0.0 enable
-2021-01-02 21:56:02-log: console@1.0.0 enable
-2021-01-02 21:56:02-log: scene@1.0.0 enable
-2021-01-02 21:56:02-log: packager@1.0.0 enable
-2021-01-02 21:56:02-log: project-setting@1.0.0 enable
-2021-01-02 21:56:02-log: about@1.0.0 enable
-2021-01-02 21:56:02-log: server@1.0.0 enable
-2021-01-02 21:56:02-log: utils@1.0.0 enable
-2021-01-02 21:56:02-log: profile@1.0.0 enable
-2021-01-02 21:56:02-log: assets@1.0.0 enable
-2021-01-02 21:56:02-log: inspector@1.0.0 enable
-2021-01-02 21:56:02-log: hierarchy@1.0.0 enable
-2021-01-02 21:56:02-log: preview@1.0.0 enable
-2021-01-02 21:56:02-log: animator@1.0.0 enable
-2021-01-02 21:56:05-log: builder@1.0.0 enable
-2021-01-02 21:56:05-log: alipay-mini-game@1.0.0 enable
-2021-01-02 21:56:05-log: android@1.0.0 enable
-2021-01-02 21:56:05-log: baidu-mini-game@1.0.0 enable
-2021-01-02 21:56:05-log: cocos-play@1.0.0 enable
-2021-01-02 21:56:05-log: huawei-mini-game@1.0.0 enable
-2021-01-02 21:56:05-log: ios@1.0.0 enable
-2021-01-02 21:56:05-log: mac@1.0.0 enable
-2021-01-02 21:56:05-log: native@1.0.0 enable
-2021-01-02 21:56:05-log: oppo-mini-game@1.0.0 enable
-2021-01-02 21:56:05-log: vivo-mini-game@1.0.0 enable
-2021-01-02 21:56:05-log: web-desktop@1.0.0 enable
-2021-01-02 21:56:05-log: web-mobile@1.0.0 enable
-2021-01-02 21:56:05-log: wechatgame@1.0.0 enable
-2021-01-02 21:56:05-log: windows@1.0.0 enable
-2021-01-02 21:56:05-log: xiaomi-quick-game@1.0.0 enable
-2021-01-02 21:56:13-warn: [Asset DB] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
-2021-01-02 22:29:58-error: [preview-error]Uncaught TypeError: this.carManager.resetCars is not a function in http://localhost:7456/scripting/assets/script/game/GameCtril.js
-2021-01-02 22:30:06-error: [preview-error]Uncaught TypeError: this.carManager.resetCars is not a function in http://localhost:7456/scripting/assets/script/game/GameCtril.js
-2021-01-02 22:31:07-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:34:22-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:39:52-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:42:56-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:45:16-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:45:20-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:51:32-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 22:58:49-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:05:55-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:15:14-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:16:02-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:20:22-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:30:26-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:32:11-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:32:24-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
-2021-01-02 23:35:06-error: [preview-error]Uncaught TypeError: Cannot read property 'startSchedule' of null in http://localhost:7456/scripting/assets/script/game/CarManager.js
+2021-01-03 21:06:29-log: ui-kit@1.0.0 enable
+2021-01-03 21:06:29-log: ipc@1.0.0 enable
+2021-01-03 21:06:29-log: tester@1.0.0 enable
+2021-01-03 21:06:29-log: preferences@1.0.0 enable
+2021-01-03 21:06:30-log: engine@1.0.0 enable
+2021-01-03 21:06:31-log: asset-db@1.0.0 enable
+2021-01-03 21:06:31-log: console@1.0.0 enable
+2021-01-03 21:06:31-log: scene@1.0.0 enable
+2021-01-03 21:06:31-log: packager@1.0.0 enable
+2021-01-03 21:06:31-log: project-setting@1.0.0 enable
+2021-01-03 21:06:31-log: about@1.0.0 enable
+2021-01-03 21:06:31-log: server@1.0.0 enable
+2021-01-03 21:06:31-log: utils@1.0.0 enable
+2021-01-03 21:06:31-log: profile@1.0.0 enable
+2021-01-03 21:06:31-log: assets@1.0.0 enable
+2021-01-03 21:06:31-log: inspector@1.0.0 enable
+2021-01-03 21:06:31-log: hierarchy@1.0.0 enable
+2021-01-03 21:06:31-log: preview@1.0.0 enable
+2021-01-03 21:06:31-log: animator@1.0.0 enable
+2021-01-03 21:06:32-log: builder@1.0.0 enable
+2021-01-03 21:06:32-log: alipay-mini-game@1.0.0 enable
+2021-01-03 21:06:32-log: android@1.0.0 enable
+2021-01-03 21:06:32-log: baidu-mini-game@1.0.0 enable
+2021-01-03 21:06:32-log: cocos-play@1.0.0 enable
+2021-01-03 21:06:32-log: huawei-mini-game@1.0.0 enable
+2021-01-03 21:06:32-log: ios@1.0.0 enable
+2021-01-03 21:06:32-log: mac@1.0.0 enable
+2021-01-03 21:06:32-log: native@1.0.0 enable
+2021-01-03 21:06:32-log: oppo-mini-game@1.0.0 enable
+2021-01-03 21:06:32-log: vivo-mini-game@1.0.0 enable
+2021-01-03 21:06:32-log: web-desktop@1.0.0 enable
+2021-01-03 21:06:32-log: web-mobile@1.0.0 enable
+2021-01-03 21:06:32-log: wechatgame@1.0.0 enable
+2021-01-03 21:06:32-log: windows@1.0.0 enable
+2021-01-03 21:06:32-log: xiaomi-quick-game@1.0.0 enable
+2021-01-03 21:06:42-warn: [Asset DB] Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+2021-01-03 21:16:39-info: asset(D:\读书\前端\JS高级与Ts\TS\cocos game\接送客人小游戏\assets\Game.scene) saved
+2021-01-03 21:17:05-info: asset(D:\读书\前端\JS高级与Ts\TS\cocos game\接送客人小游戏\assets\Game.scene) saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:03-info: asset meta saved
+2021-01-03 21:19:04-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeBoxOnline02.png
+2021-01-03 21:19:04-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeIconArrow.png
+2021-01-03 21:19:05-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:19:05-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:21:38-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:21:38-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:21:38-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:21:38-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:21:40-warn: [Window] Load thumbnail failed: db://assets/textures/UI/home/homeImgPoint.png
+2021-01-03 21:39:01-info: asset(D:\读书\前端\JS高级与Ts\TS\cocos game\接送客人小游戏\assets\Game.scene) saved
+2021-01-03 22:33:16-info: asset(D:\读书\前端\JS高级与Ts\TS\cocos game\接送客人小游戏\assets\Game.scene) saved

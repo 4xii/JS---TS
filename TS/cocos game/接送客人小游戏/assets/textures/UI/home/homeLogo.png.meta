@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "dfe1552c-83e5-4cdc-a00e-6670c8bb650f@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "dfe1552c-83e5-4cdc-a00e-6670c8bb650f@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 434,
+        "height": 116,
+        "rawWidth": 434,
+        "rawHeight": 116,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "dfe1552c-83e5-4cdc-a00e-6670c8bb650f"
+        "imageUuidOrDatabaseUri": "dfe1552c-83e5-4cdc-a00e-6670c8bb650f",
+        "atlasUuid": ""
       },
       "displayName": "homeLogo",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "dfe1552c-83e5-4cdc-a00e-6670c8bb650f@6c48a"
+    "type": "sprite-frame",
+    "redirect": "dfe1552c-83e5-4cdc-a00e-6670c8bb650f@f9941"
   }
 }

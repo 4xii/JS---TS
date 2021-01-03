@@ -34,7 +34,7 @@ export class EffectManager extends Component {
         }
     }
 
-    private _startBraking(...args:any){
+    private _startBraking(...args:any[]){
         const follow = this._followTarget = args[0];
         this._currBraking = PoolManager.getNode(this.brakeTrail,this.node)
         this._currBraking.setWorldPosition(follow);

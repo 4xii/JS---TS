@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Vec3, ParticleSystemComponent } from "cc";
+import { _decorator, Component, Node, Vec3, ParticleSystemComponent, BoxColliderComponent, RigidBodyComponent, ICollisionEvent } from "cc";
 import { CustomEventListener } from "../data/CustomEventListener";
 import {RoadPoint} from "./RoadPoint";
 import {Constants} from '../data/Constants';
@@ -30,6 +30,7 @@ export class Car extends Component {
     private _isBraking = false;
     private _gas:ParticleSystemComponent = null;
     private _overCD: Function = null;
+    private _camera:Node = null;
 
     //监听动画播放结束的回调
     public start (){
@@ -154,13 +155,31 @@ export class Car extends Component {
             }
         }
 
+
+        const collider = this.node.getComponent(BoxColliderComponent);
         if(this._isMain){
             const gasNode = this.node.getChildByName('gas');
             this._gas = gasNode.getComponent(ParticleSystemComponent);
             this._gas.play();
+
+            collider.on('onCollisionEnter',this._onCollisionEnter,this);
+            collider.setGroup(Constants.CarGroup.MAIN_CAR)//玩家分组
+            collider.setMask(Constants.CarGroup.OTHER_CAR)//要碰撞的组
+        }else{
+            collider.setGroup(Constants.CarGroup.OTHER_CAR)
+            collider.setMask(-1)//所有组都检测为-1
         }
+        this._resetPhysical();//激活一次刚体组件
     }
 
+    public setCamera(camera:Node,pos:Vec3,rotation:number){
+        if(this._isMain){
+            this._camera = camera;
+            this._camera.parent = this.node;
+            this._camera.setPosition(pos);
+            this._camera.eulerAngles = new Vec3(rotation,0,0)
+        }
+    }
     public startRunning(){
         if(this._currRoadPoint){
             this._isMoving = true;
@@ -178,6 +197,11 @@ export class Car extends Component {
 
     public moveAfterFinished(cd:Function){
         this._overCD = cd;
+    }
+
+    public stopImmediaterly(){
+        this._isMoving =false;
+        this._currSpeed = 0;
     }
 
     //到站
@@ -245,6 +269,25 @@ export class Car extends Component {
             }
         }
     }
+
+    private _onCollisionEnter(event:ICollisionEvent){
+        console.log('碰撞了')
+        
+        const otherCollider = event.otherCollider;
+        if(otherCollider.node.name === 'group'){
+            return;
+        }
+        const otherRigidBody = otherCollider.node.getComponent(RigidBodyComponent);//获取刚体
+        otherRigidBody.useGravity = true;//使用重力
+        otherRigidBody.applyForce(new Vec3(0,3000,-1500),new Vec3(0,0.5,0));//添加推力
+
+        const collider = event.selfCollider;
+        collider.addMask(Constants.CarGroup.NORMAL);
+        const rigidBody = this.node.getComponent(RigidBodyComponent);
+        rigidBody.useGravity = true;
+        this._gameover();
+
+    }
     
     private _greetingCustomer(){
         //接客
@@ -264,8 +307,22 @@ export class Car extends Component {
     }
 
     private _finishedWalk(){
-        this._isInOrder = false;
-        this._gas.play();    
+        if(this._isMain){
+            this._isInOrder = false;
+            this._gas.play();
+        }
+    }
+
+    private _gameover(){
+        CustomEventListener.dispatchEvent(EventName.GAME_OVER);
+    }
+
+    private _resetPhysical(){
+        //只有在碰撞时需要重力，重置重力
+        const rigidBody = this.node.getComponent(RigidBodyComponent);
+        rigidBody.useGravity = false;
+        rigidBody.sleep();
+        rigidBody.wakeUp();//节点池拿出来刚体可能休眠
     }
     //转换角度正负
     private _conversion(value:number){

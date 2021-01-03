@@ -1,4 +1,4 @@
-import { _decorator, Component, Node,Touch,EventTouch } from "cc";
+import { _decorator, Component, Node,Touch,EventTouch, BoxColliderComponent } from "cc";
 import { Constants } from "../data/Constants";
 import { AudioManager } from "./AudioManager";
 import { CarManager } from "./CarManager";
@@ -17,10 +17,18 @@ export class GameCtril extends Component {
     })
     carManager: CarManager = null;
 
+    @property({
+        type:Node,
+    })
+    group:Node = null;
+
     //生命周期onLoad初始化阶段
     public onLoad(){
         this.mapManager.resetMap();
         this.carManager.reset(this.mapManager.currPath)
+        const collider = this.group.getComponent(BoxColliderComponent);
+        collider.setGroup(Constants.CarGroup.NORMAL);
+        collider.setMask(-1);//所有组都检测
     }
 
     //屏幕点击事件

@@ -27,7 +27,7 @@ export class RoadPoint extends Component {
         type: ROAD_POINT_TYPE,
         displayOrder: 1,
     })
-    type = ROAD_POINT_TYPE.NORMAL;//1
+    type = ROAD_POINT_TYPE.NORMAL;
 
     @property({
         type: Node,

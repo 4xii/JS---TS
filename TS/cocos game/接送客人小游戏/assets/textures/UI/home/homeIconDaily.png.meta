@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "fced9f51-4e66-4865-b448-8d92b63a0ada@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "fced9f51-4e66-4865-b448-8d92b63a0ada@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0.5,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 118,
+        "height": 129,
+        "rawWidth": 118,
+        "rawHeight": 130,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "fced9f51-4e66-4865-b448-8d92b63a0ada"
+        "imageUuidOrDatabaseUri": "fced9f51-4e66-4865-b448-8d92b63a0ada",
+        "atlasUuid": ""
       },
       "displayName": "homeIconDaily",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "fced9f51-4e66-4865-b448-8d92b63a0ada@6c48a"
+    "type": "sprite-frame",
+    "redirect": "fced9f51-4e66-4865-b448-8d92b63a0ada@f9941"
   }
 }

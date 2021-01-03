@@ -8,10 +8,10 @@
     ".json"
   ],
   "subMetas": {
-    "6c48a": {
-      "ver": "1.0.19",
-      "importer": "texture",
-      "uuid": "b8285a19-75d5-4343-b2bb-954df8f1e573@6c48a",
+    "f9941": {
+      "ver": "1.0.8",
+      "importer": "sprite-frame",
+      "uuid": "b8285a19-75d5-4343-b2bb-954df8f1e573@f9941",
       "imported": true,
       "files": [
         ".json"
@@ -25,16 +25,32 @@
         "mipfilter": "none",
         "premultiplyAlpha": false,
         "anisotropy": 1,
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 0,
+        "trimY": 0,
+        "width": 82,
+        "height": 82,
+        "rawWidth": 82,
+        "rawHeight": 82,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "b8285a19-75d5-4343-b2bb-954df8f1e573"
+        "imageUuidOrDatabaseUri": "b8285a19-75d5-4343-b2bb-954df8f1e573",
+        "atlasUuid": ""
       },
       "displayName": "homeIconGold",
-      "id": "6c48a",
-      "name": "texture"
+      "id": "f9941",
+      "name": "spriteFrame"
     }
   },
   "userData": {
-    "type": "texture",
-    "redirect": "b8285a19-75d5-4343-b2bb-954df8f1e573@6c48a"
+    "type": "sprite-frame",
+    "redirect": "b8285a19-75d5-4343-b2bb-954df8f1e573@f9941"
   }
 }
